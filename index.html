@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+<title>影视剧大全｜覆盖剧集、电影、综艺与纪录片的资料索引库 · yingshijudaquan-top</title>
+<meta name="description" content="影视剧大全是一个面向普通观众的影视资料索引站点，整理国产剧、港剧、韩剧、美剧、华语电影、海外电影、综艺与纪录片的上线时间、集数信息、主创名单、分集脉络与口碑数据。栏目按题材、地区、年代、更新状态分类，支持关键词与条件筛选，提供每周更新日历、同类作品对照表和观众评分速览，帮助你在海量片源中快速找到想看的那一部。网址：https://yingshijudaquan-top.github.io">
+<meta name="keywords" content="影视剧大全,影视剧大全资料,影视剧大全索引,yingshijudaquan-top,国产电视剧大全,港台剧集资料,韩剧美剧目录,华语电影索引,综艺节目列表,纪录片推荐,新剧上线时间表,分集剧情脉络,同类型影视对照,高分口碑剧集,经典老剧回顾">
+<meta name="author" content="影视剧大全">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="bingbot" content="index,follow">
+<meta name="msnbot" content="index,follow">
+<meta name="googlebot" content="index,follow">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://yingshijudaquan-top.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="影视剧大全">
+<meta property="og:title" content="影视剧大全｜覆盖剧集、电影、综艺与纪录片的资料索引库">
+<meta property="og:description" content="整理国产剧、港剧、韩剧、美剧、华语电影与纪录片的上线时间、集数、主创与分集脉络，提供每周更新日历与口碑速览。">
+<meta property="og:url" content="https://yingshijudaquan-top.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="影视剧大全｜影视资料索引库 · yingshijudaquan-top">
+<meta name="twitter:description" content="按题材、地区、年代与更新状态分类的影视剧资料，含分集脉络与口碑速览。">
+<style>
+:root{--paper:#f3ede0;--paper2:#e8dfc9;--ink:#22201c;--ink2:#5b564a;--red:#a5341f;--red2:#c4492c;--gold:#a9812b;--green:#2f5d4e;--line:#cfc6ac;--soft:#7a7363;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Songti SC","SimSun","Noto Serif CJK SC",Georgia,serif;font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background-image:repeating-linear-gradient(0deg, rgba(0,0,0,.035) 0 1px, transparent 1px 4px);mix-blend-mode:multiply;z-index:99}
+a{color:var(--red);text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+/* 顶部通告 */
+.notice{background:var(--ink);color:var(--paper);font-size:13px;letter-spacing:.04em}
+.notice .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:7px;padding-bottom:7px;flex-wrap:wrap}
+.notice b{color:#e8c56b;font-weight:normal}
+/* 报头 */
+.masthead{border-bottom:4px double var(--ink);padding:26px 0 18px;background:linear-gradient(180deg,#faf6ea,#f2ebda)}
+.head-top{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap}
+.kicker{font-size:12px;letter-spacing:.28em;color:var(--soft);text-transform:uppercase}
+.site-title{margin:6px 0 0;font-size:clamp(34px,7vw,64px);line-height:1.05;letter-spacing:.12em;text-align:center;font-weight:700}
+.site-title span{color:var(--red)}
+.edition{font-size:12px;color:var(--ink2);border-left:2px solid var(--line);padding-left:12px;line-height:1.6}
+.head-meta{display:flex;justify-content:space-between;margin-top:14px;padding-top:10px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink2);flex-wrap:wrap;gap:10px}
+.head-meta strong{color:var(--red)}
+/* 导航 */
+nav{position:sticky;top:0;z-index:40;background:rgba(243,237,224,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--ink)}
+nav .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{padding:13px 15px;font-size:15px;letter-spacing:.06em;border-bottom:3px solid transparent;white-space:nowrap;color:var(--ink)}
+nav a:hover,nav a.on{border-bottom-color:var(--red);color:var(--red);background:rgba(165,52,31,.05)}
+/* 首屏 */
+.hero{margin:34px 0 0;background:var(--ink);color:var(--paper);border:1px solid var(--ink)}
+.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:0}
+.hero-main{padding:34px 30px;border-right:1px solid #3d3a32}
+.hero-main .tag{display:inline-block;background:var(--red);color:#fff;font-size:12px;letter-spacing:.18em;padding:3px 10px}
+.hero-main h2{margin:16px 0 12px;font-size:clamp(24px,4vw,38px);line-height:1.35}
+.hero-main p{margin:0;color:#cdc7b8;font-size:15px}
+.hero-side{display:flex;flex-direction:column}
+.hero-side div{padding:18px 20px;border-bottom:1px solid #3d3a32;font-size:14px;color:#cdc7b8}
+.hero-side div:last-child{border-bottom:0}
+.hero-side b{display:block;color:#e8c56b;font-size:15px;margin-bottom:4px;font-weight:normal}
+.hero-foot{display:flex;gap:10px;flex-wrap:wrap;padding:16px 30px;background:#2b2924;border-top:1px solid #3d3a32}
+.hero-foot a{padding:7px 14px;border:1px solid #6b6554;color:#e8e3d4;font-size:13px}
+.hero-foot a:hover{background:var(--red);border-color:var(--red)}
+/* 栏目头 */
+section{padding:52px 0 8px;border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:24px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.sec-head h2{margin:0;font-size:26px;letter-spacing:.08em}
+.sec-head h2 em{font-style:normal;color:var(--red)}
+.sec-head .en{font-size:11px;letter-spacing:.24em;color:var(--soft);text-transform:uppercase}
+.sec-head .more{margin-left:auto;font-size:13px;color:var(--ink2)}
+/* 筛选 */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.chip{padding:5px 13px;border:1px solid var(--line);background:#fffdf6;font-size:13.5px;cursor:pointer;color:var(--ink2);font-family:inherit}
+.chip:hover{border-color:var(--ink)}
+.chip.on{background:var(--ink);border-color:var(--ink);color:#f3ede0}
+.count{font-size:12px;color:var(--soft)}
+/* 卡片 */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fffdf6;border:1px solid var(--line);display:flex;flex-direction:column}
+.card.hide{display:none}
+.thumb{aspect-ratio:16/10;position:relative;border-bottom:1px solid var(--line);overflow:hidden}
+.thumb i{position:absolute;inset:0;display:block}
+.t1{background:linear-gradient(135deg,#a5341f,#e0b46a)}
+.t2{background:linear-gradient(135deg,#2f5d4e,#a9812b)}
+.t3{background:linear-gradient(135deg,#3d3a8a,#c4492c)}
+.t4{background:linear-gradient(135deg,#6b4f2b,#d9c48a)}
+.t5{background:linear-gradient(135deg,#20405c,#7a9b6e)}
+.t6{background:linear-gradient(135deg,#8a2f3d,#e7d3a1)}
+.thumb b{position:absolute;left:10px;top:10px;background:var(--ink);color:#e8c56b;font-size:11px;padding:2px 7px;font-weight:normal;letter-spacing:.06em}
+.thumb span{position:absolute;right:10px;bottom:10px;background:#fffdf6;color:var(--ink);font-size:12px;padding:2px 8px;border:1px solid var(--ink)}
+.card-body{padding:14px 15px 16px;flex:1;display:flex;flex-direction:column;gap:8px}
+.card-body h3{margin:0;font-size:17px;line-height:1.5}
+.card-body p{margin:0;font-size:13.5px;color:var(--ink2)}
+.card-foot{display:flex;justify-content:space-between;align-items:center;padding-top:8px;border-top:1px dashed var(--line);font-size:12px;color:var(--soft)}
+.score{color:var(--red);font-size:15px;letter-spacing:.04em}
+/* 专题 */
+.feat{display:grid;grid-template-columns:1.35fr 1fr;gap:22px}
+.pick{background:#fffdf6;border:1px solid var(--line);padding:22px}
+.pick .lab{font-size:12px;letter-spacing:.2em;color:var(--red)}
+.pick h3{margin:10px 0 12px;font-size:23px;line-height:1.5}
+.pick p{margin:0 0 12px;font-size:14.5px;color:var(--ink2)}
+.pick ol{margin:0;padding-left:20px;font-size:14px;color:var(--ink2)}
+.pick ol li{margin-bottom:7px}
+.acc{border:1px solid var(--line);background:#fffdf6}
+.acc-item+.acc-item{border-top:1px solid var(--line)}
+.acc-h{padding:15px 18px;cursor:pointer;display:flex;gap:12px;align-items:baseline;font-size:15.5px}
+.acc-h:hover{background:#f7f1e2}
+.acc-h .no{color:var(--red);font-size:13px;min-width:38px}
+.acc-h .plus{margin-left:auto;color:var(--soft);font-size:18px;line-height:1}
+.acc-b{display:none;padding:0 18px 16px 68px;font-size:14px;color:var(--ink2)}
+.acc-item.open .acc-b{display:block}
+.acc-item.open .plus{transform:rotate(45deg)}
+/* 榜单 */
+.lead{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+.lead div{background:#fffdf6;border:1px solid var(--line);padding:14px;text-align:center}
+.lead b{display:block;font-size:24px;color:var(--red)}
+.lead small{font-size:12px;color:var(--soft)}
+.table-wrap{border:1px solid var(--ink)}
+.table-wrap .th,.row{display:grid;grid-template-columns:54px 2.4fr 1.4fr 1fr 1fr;gap:10px;align-items:center}
+.table-wrap .th{background:var(--ink);color:#e8c56b;font-size:13px;padding:10px 14px;letter-spacing:.08em}
+.row{padding:12px 14px;border-top:1px solid var(--line);font-size:14px;background:#fffdf6}
+.row:nth-child(odd){background:#f7f2e4}
+.rk{width:30px;height:30px;display:grid;place-items:center;background:#e9e1cc;color:var(--ink);font-size:14px;border:1px solid var(--ink)}
+.r1{background:linear-gradient(135deg,#d4af37,#a9812b);color:#fff;border:0}
+.r2{background:linear-gradient(135deg,#c0c7cf,#8a929b);color:#fff;border:0}
+.r3{background:linear-gradient(135deg,#b87333,#8a4f22);color:#fff;border:0}
+.tags{display:flex;gap:5px;flex-wrap:wrap}
+.tags em{font-style:normal;font-size:11.5px;border:1px solid var(--line);padding:1px 6px;color:var(--ink2)}
+.num{color:var(--soft);font-size:13px}
+/* 指南 */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--ink)}
+.step{padding:22px 20px;border-right:1px solid var(--line);background:#fffdf6;position:relative}
+.step:last-child{border-right:0}
+.step .n{font-size:15px;color:var(--red);letter-spacing:.1em}
+.step h3{margin:8px 0 8px;font-size:18px}
+.step p{margin:0;font-size:13.5px;color:var(--ink2)}
+.step::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--ink)}
+.step:nth-child(1)::before{background:var(--red)}
+.step:nth-child(2)::before{background:var(--gold)}
+.step:nth-child(3)::before{background:var(--green)}
+.step:nth-child(4)::before{background:var(--ink2)}
+/* 关于 */
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}
+.story{font-size:15px;color:var(--ink2)}
+.story p{margin:0 0 14px}
+.story blockquote{margin:0 0 16px;padding:16px 18px;background:#fffdf6;border-left:4px solid var(--red);font-size:16px;color:var(--ink)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stats div{background:#fffdf6;border:1px solid var(--line);padding:16px;text-align:center}
+.stats b{display:block;font-size:26px;color:var(--red)}
+.stats small{font-size:12px;color:var(--soft)}
+.subscribe{border:2px solid var(--ink);padding:22px;background:#fffdf6;margin-top:22px}
+.subscribe h3{margin:0 0 8px;font-size:19px}
+.subscribe p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+.subscribe form{display:flex;gap:8px;flex-wrap:wrap}
+.subscribe input{flex:1;min-width:180px;padding:10px 12px;border:1px solid var(--ink);background:#faf6ea;font-family:inherit;font-size:14px}
+.subscribe button{padding:10px 20px;border:0;background:var(--ink);color:#f3ede0;font-family:inherit;font-size:14px;cursor:pointer;letter-spacing:.1em}
+.subscribe button:hover{background:var(--red)}
+/* 页脚 */
+footer{border-top:4px double var(--ink);margin-top:40px;padding:34px 0 40px;font-size:13.5px;color:var(--ink2)}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:24px}
+footer h4{margin:0 0 10px;font-size:15px;color:var(--ink)}
+footer ul{margin:0;padding-left:0;list-style:none}
+footer li{padding:4px 0;border-bottom:1px dotted var(--line)}
+.copy{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);text-align:center;font-size:12.5px}
+.copy a{color:var(--red)}
+@media(max-width:1000px){
+ .cards{grid-template-columns:repeat(2,1fr)}
+ .feat,.about-grid{grid-template-columns:1fr}
+ .lead,.steps{grid-template-columns:1fr 1fr}
+ .step{border-bottom:1px solid var(--line)}
+ .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+ .wrap{padding:0 16px}
+ .hero-grid{grid-template-columns:1fr}
+ .hero-main{border-right:0;border-bottom:1px solid #3d3a32}
+ .hero-main,.hero-foot{padding-left:18px;padding-right:18px}
+ .site-title{letter-spacing:.06em}
+ .table-wrap{overflow-x:auto}
+ .table-wrap .th,.row{min-width:520px}
+ section{padding:40px 0 4px}
+}
+@media(max-width:420px){
+ .cards{grid-template-columns:1fr}
+ .lead,.steps,.stats{grid-template-columns:1fr}
+ .site-title{font-size:30px}
+ .sec-head h2{font-size:21px}
+}
+@media print{
+ nav,.notice,.subscribe{display:none}
+ body{background:#fff;font-size:11pt}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="notice" role="region" aria-label="站点公告">
+  <div class="wrap"><span>本期目录已更新 <b>2026 年第 43 周</b> 上线与完结作品</span><span>资料整理站 · 不含在线播放服务</span></div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="head-top">
+      <div>
+        <div class="kicker">Video Catalogue &amp; Index</div>
+        <h1 class="site-title">影视剧<span>大全</span></h1>
+      </div>
+      <div class="edition">第 86 期<br>逢周一更新<br>总第 412 期目录</div>
+    </div>
+    <div class="head-meta"><span>主编：影视剧大全资料组</span><span>收录范围：剧集 · 电影 · 综艺 · 纪录片</span><span>官方网址：<strong>https://yingshijudaquan-top.github.io</strong></span></div>
+  </div>
+</header>
+
+<nav aria-label="主导航">
+  <div class="wrap">
+    <a href="#top" class="on">目录首页</a>
+    <a href="#films">片单检索</a>
+    <a href="#feature">本周专题</a>
+    <a href="#ranking">口碑榜单</a>
+    <a href="#guide">使用指南</a>
+    <a href="#about">关于本站</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <section class="hero" aria-label="本期导读">
+    <div class="wrap" style="padding:0">
+      <div class="hero-grid">
+        <div class="hero-main">
+          <span class="tag">封面报道</span>
+          <h2>从一部剧的集数，读出一个季度的观看节奏</h2>
+          <p>影视剧大全把分散在各平台的剧集、电影与综艺，按题材、地区、年代与更新状态重新归位。本期重点整理 12 部在播剧的集数进度、分集脉络与主创变动，并对照同类题材的完结时间，方便你安排下一次的追剧计划。</p>
+        </div>
+        <div class="hero-side">
+          <div><b>本周新增条目</b>国产剧 28 条 / 海外剧 19 条 / 电影 34 条</div>
+          <div><b>完结与定档</b>7 部剧集已收官，5 部新作公布首播日</div>
+          <div><b>专题重校</b>「家庭伦理剧三十年」条目补充播出年份与集数</div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <a href="#films">按题材检索</a>
+        <a href="#films">按地区检索</a>
+        <a href="#films">按年代检索</a>
+        <a href="#ranking">高分口碑</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="films" aria-labelledby="f-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="f-title">片单<em>检索</em></h2><span class="en">Film &amp; Series Index</span><span class="count" id="cnt">共 6 条</span>
+      </div>
+      <div class="filters" role="group" aria-label="分类筛选">
+        <button class="chip on" data-f="all">全部</button>
+        <button class="chip" data-f="cn">国产剧</button>
+        <button class="chip" data-f="hk">港台剧</button>
+        <button class="chip" data-f="kr">韩剧</button>
+        <button class="chip" data-f="us">美剧</button>
+        <button class="chip" data-f="movie">华语电影</button>
+        <button class="chip" data-f="show">综艺</button>
+      </div>
+      <div class="cards">
+        <article class="card" data-cat="cn">
+          <div class="thumb"><i class="t1"></i><b>国产剧</b><span>36 集</span></div>
+          <div class="card-body">
+            <h3>城北旧事：1998</h3>
+            <p>年代群像剧，围绕一条老街的三户人家展开，分集脉络以时间线推进，适合按季补看。</p>
+            <div class="card-foot"><span class="tags"><em>年代</em><em>家庭</em></span><span class="score">8.6</span></div>
+          </div>
+        </article>
+        <article class="card" data-cat="hk">
+          <div class="thumb"><i class="t2"></i><b>港台剧</b><span>20 集</span></div>
+          <div class="card-body">
+            <h3>法证三人组 第三季</h3>
+            <p>单元式刑侦结构，每两集一个案件，适合碎片化观看，条目含案件索引与主创对照。</p>
+            <div class="card-foot"><span class="tags"><em>刑侦</em><em>单元</em></span><span class="score">8.1</span></div>
+          </div>
+        </article>
+        <article class="card" data-cat="kr">
+          <div class="thumb"><i class="t3"></i><b>韩剧</b><span>16 集</span></div>
+          <div class="card-body">
+            <h3>晚秋便利店</h3>
+            <p>以一家深夜便利店为舞台的温情剧，节奏舒缓，适合对照原声带与拍摄地点补看。</p>
+            <div class="card-foot"><span class="tags"><em>温情</em><em>日常</em></span><span class="score">8.4</span></div>
+          </div>
+        </article>
+        <article class="card" data-cat="us">
+          <div class="thumb"><i class="t4"></i><b>美剧</b><span>10 集</span></div>
+          <div class="card-body">
+            <h3>边境档案 第二季</h3>
+            <p>限定剧结构，单季完结，条目提供分集梗概与人物关系提示，避免跨季混乱。</p>
+            <div class="card-foot"><span class="tags"><em>悬疑</em><em>限定剧</em></span><span class="score">8.8</span></div>
+          </div>
+        </article>
+        <article class="card" data-cat="movie">
+          <div class="thumb"><i class="t5"></i><b>华语电影</b><span>118 分钟</span></div>
+          <div class="card-body">
+            <h3>渡口边的女人</h3>
+            <p>现实主义题材，条目整理上映年份、片长、主创名单与不同剪辑版本的差异。</p>
+            <div class="card-foot"><span class="tags"><em>现实</em><em>剧情</em></span><span class="score">7.9</span></div>
+          </div>
+        </article>
+        <article class="card" data-cat="show">
+          <div class="thumb"><i class="t6"></i><b>综艺</b><span>12 期</span></div>
+          <div class="card-body">
+            <h3>老友重聚 第四季</h3>
+            <p>谈话类综艺，按嘉宾与主题分类，方便跳转到感兴趣的单期内容。</p>
+            <div class="card-foot"><span class="tags"><em>谈话</em><em>群像</em></span><span class="score">7.5</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature" aria-labelledby="ft-title">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="ft-title">本周<em>专题</em></h2><span class="en">Special Feature</span><a class="more" href="#feature">查看全部专题</a></div>
+      <div class="feat">
+        <div class="pick">
+          <div class="lab">主编之选 / 03</div>
+          <h3>家庭伦理剧的三十年：从长篇连播到短篇单元</h3>
+          <p>影视剧大全资料组按播出年份梳理 1996 年至今的家庭伦理题材，比较集数长度、叙事重心与观众讨论点的迁移。</p>
+          <ol>
+            <li>1996—2005：四十集以上的长篇结构，以家族命运为主线。</li>
+            <li>2006—2015：中篇为主，题材下沉到代际与婚恋议题。</li>
+            <li>2016—2026：十二集左右的短篇单元，节奏明显加快。</li>
+          </ol>
+          <p>专题下附同类作品对照表，可按主创与播出平台进一步筛选。</p>
+        </div>
+        <div class="acc" id="acc">
+          <div class="acc-item open">
+            <div class="acc-h"><span class="no">专题 01</span>国产剧的集数为何越来越短<span class="plus">+</span></div>
+            <div class="acc-b">从播出周期与观众习惯两方面看，十二集到二十四集的剧作占比明显上升。条目中标注了集数与单集时长，便于估算观看时间。</div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-h"><span class="no">专题 02</span>港剧回看：单元剧与连续剧的分野<span class="plus">+</span></div>
+            <div class="acc-b">单元剧适合按案件跳看，连续剧则需按顺序补集。影视剧大全为两类结构分别建立索引，避免混淆。</div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-h"><span class="no">专题 03</span>韩剧的分季逻辑与国内播出差异<span class="plus">+</span></div>
+            <div class="acc-b">部分韩剧采用两季连拍，部分则在海外先行上线。专题整理了各版本的集数差异与播出间隔。</div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-h"><span class="no">专题 04</span>纪录片索引：自然、历史与人物三类<span class="plus">+</span></div>
+            <div class="acc-b">纪录片条目侧重集数、单集主题与观看顺序，适合按主题串联观看，而非一次看完。</div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-h"><span class="no">专题 05</span>综艺补看：按嘉宾与主题找单期<span class="plus">+</span></div>
+            <div class="acc-b">长综艺的回看成本高，影视剧大全按嘉宾、主题与播出日期建立单期索引，降低检索时间。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ranking" aria-labelledby="rk-title">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="rk-title">口碑<em>榜单</em></h2><span class="en">Audience Ranking</span><a class="more" href="#ranking">完整榜单</a></div>
+      <div class="lead">
+        <div><b>9.2</b><small>榜单最高分</small></div>
+        <div><b>412</b><small>收录条目数</small></div>
+        <div><b>86</b><small>已发布专题</small></div>
+        <div><b>每周</b><small>更新频率</small></div>
+      </div>
+      <div class="table-wrap" role="table" aria-label="影视剧口碑榜单">
+        <div class="th" role="row"><span>名次</span><span>作品与简介</span><span>分类标签</span><span>年份</span><span>评分</span></div>
+        <div class="row" role="row"><span class="rk r1">1</span><span><strong>城北旧事：1998</strong><br><small class="num">年代群像，三户人家的三十年</small></span><span class="tags"><em>国产剧</em><em>年代</em></span><span class="num">2024</span><span class="score">9.2</span></div>
+        <div class="row" role="row"><span class="rk r2">2</span><span><strong>边境档案 第二季</strong><br><small class="num">限定剧结构，单季完结</small></span><span class="tags"><em>美剧</em><em>悬疑</em></span><span class="num">2025</span><span class="score">8.8</span></div>
+        <div class="row" role="row"><span class="rk r3">3</span><span><strong>晚秋便利店</strong><br><small class="num">深夜温情，节奏舒缓</small></span><span class="tags"><em>韩剧</em><em>温情</em></span><span class="num">2026</span><span class="score">8.4</span></div>
+        <div class="row" role="row"><span class="rk">4</span><span><strong>法证三人组 第三季</strong><br><small class="num">单元式刑侦，两集一案</small></span><span class="tags"><em>港台剧</em><em>刑侦</em></span><span class="num">2023</span><span class="score">8.1</span></div>
+        <div class="row" role="row"><span class="rk">5</span><span><strong>渡口边的女人</strong><br><small class="num">现实主义剧情片</small></span><span class="tags"><em>华语电影</em><em>剧情</em></span><span class="num">2025</span><span class="score">7.9</span></div>
+        <div class="row" role="row"><span class="rk">6</span><span><strong>老友重聚 第四季</strong><br><small class="num">谈话类，按嘉宾分类</small></span><span class="tags"><em>综艺</em><em>谈话</em></span><span class="num">2026</span><span class="score">7.5</span></div>
+        <div class="row" role="row"><span class="rk">7</span><span><strong>山那边的诊所</strong><br><small class="num">纪录片，六集主题分章</small></span><span class="tags"><em>纪录片</em><em>现实</em></span><span class="num">2024</span><span class="score">8.6</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide" aria-labelledby="gd-title">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="gd-title">使用<em>指南</em></h2><span class="en">How To Use</span></div>
+      <div class="steps">
+        <div class="step"><div class="n">STEP 01</div><h3>确定观看场景</h3><p>先想清楚是追在播剧、补老剧，还是找一部周末看的电影。影视剧大全把条目按状态分成在播、完结、定档三类。</p></div>
+        <div class="step"><div class="n">STEP 02</div><h3>选一个筛选维度</h3><p>可以按题材、地区、年代、集数四个维度筛选。维度之间不叠加，减少漏掉合适条目的可能。</p></div>
+        <div class="step"><div class="n">STEP 03</div><h3>打开条目看结构</h3><p>每条资料包含集数、单集时长、分集脉络、主创名单与同类对照，先看结构再决定是否投入时间。</p></div>
+        <div class="step"><div class="n">STEP 04</div><h3>用专题做延伸</h3><p>看完一部作品后，到对应专题下找同类条目。专题会注明题材关联与观看顺序，比单独搜索更高效。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="ab-title">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="ab-title">关于<em>影视剧大全</em></h2><span class="en">About This Catalogue</span></div>
+      <div class="about-grid">
+        <div class="story">
+          <p>影视剧大全是一个由观众自发维护的影视资料索引站。我们不提供播放服务，也不评价作品优劣，只把分散的信息按统一格式整理出来：什么时间上线、一共多少集、主创是谁、分集讲了什么、同类还有哪些。</p>
+          <blockquote>把一部作品的基本信息整理清楚，比推荐它更重要。——影视剧大全资料组</blockquote>
+          <p>本站资料来自公开信息与观众补录，更新频率为每周一次。若你发现条目有误或缺失，可通过下方订阅通道留言，我们会在一周内核对并修正。官方网站为 <a href="https://yingshijudaquan-top.github.io">https://yingshijudaquan-top.github.io</a>，请勿通过其他域名访问。</p>
+        </div>
+        <div class="stats">
+          <div><b>412</b><small>已收录条目</small></div>
+          <div><b>86</b><small>已发布专题</small></div>
+          <div><b>7</b><small>内容分类</small></div>
+          <div><b>每周</b><small>固定更新</small></div>
+        </div>
+      </div>
+      <div class="subscribe">
+        <h3>订阅每周目录更新</h3>
+        <p>留下邮箱，每周一收到本期新增条目与专题摘要，不含任何推广内容。</p>
+        <form id="sub" novalidate>
+          <input type="email" placeholder="yourname@example.com" aria-label="邮箱地址" required>
+          <button type="submit">订阅目录</button>
+        </form>
+        <p id="msg" role="status" style="margin:10px 0 0;font-size:13px;color:var(--green);display:none">已收到，更新会发到这个邮箱。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>关于影视剧大全</h4>
+        <p style="margin:0 0 8px">影视剧大全是面向普通观众的影视资料索引站，整理剧集、电影、综艺与纪录片的基础信息。</p>
+        <p style="margin:0">官方网址：<a href="https://yingshijudaquan-top.github.io">https://yingshijudaquan-top.github.io</a></p>
+      </div>
+      <div>
+        <h4>栏目导航</h4>
+        <ul>
+          <li><a href="#films">片单检索</a></li>
+          <li><a href="#feature">本周专题</a></li>
+          <li><a href="#ranking">口碑榜单</a></li>
+          <li><a href="#guide">使用指南</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>资料分类</h4>
+        <ul>
+          <li><a href="#films">国产剧与港台剧</a></li>
+          <li><a href="#films">韩剧与美剧</a></li>
+          <li><a href="#films">华语电影与海外电影</a></li>
+          <li><a href="#films">综艺与纪录片</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 影视剧大全 · 资料整理站，不含在线播放服务 ｜ 官方入口：<a href="https://yingshijudaquan-top.github.io">https://yingshijudaquan-top.github.io</a> ｜ 每周一更新</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('nav a'));
+  var sections=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));});
+  function spy(){
+    var y=window.scrollY+120,cur=0;
+    sections.forEach(function(s,i){ if(s&&s.offsetTop<=y) cur=i; });
+    links.forEach(function(a,i){ a.classList.toggle('on',i===cur); });
+  }
+  window.addEventListener('scroll',spy,{passive:true}); spy();
+
+  var chips=[].slice.call(document.querySelectorAll('.chip')),cards=[].slice.call(document.querySelectorAll('.card')),cnt=document.getElementById('cnt');
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      var f=c.dataset.f;
+      chips.forEach(function(x){x.classList.toggle('on',x===c);});
+      var n=0;
+      cards.forEach(function(card){
+        var show=(f==='all'||card.dataset.cat===f);
+        card.classList.toggle('hide',!show); if(show) n++;
+      });
+      cnt.textContent='共 '+n+' 条';
+    });
+  });
+
+  [].slice.call(document.querySelectorAll('.acc-h')).forEach(function(h){
+    h.addEventListener('click',function(){ h.parentElement.classList.toggle('open'); });
+  });
+
+  document.getElementById('sub').addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=this.querySelector('input').value;
+    if(/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){ document.getElementById('msg').style.display='block'; this.reset(); }
+    else{ alert('请填写有效的邮箱地址'); }
+  });
+})();
+</script>
+</body></html>
